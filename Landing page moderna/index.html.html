@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Landing - Login</title>
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Archivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="body-bg flex items-center justify-center min-h-screen">
+    <div class="card-container">
+      <h1 class="text-3xl font-bold text-center mb-6 text-white">Bienvenido</h1>
+
+      <!-- Formulario de inicio de sesión -->
+      <form id="loginForm" class="space-y-5">
+        <div>
+          <label class="label">Correo electrónico</label>
+          <input
+            type="email"
+            placeholder="ejemplo@gmail.com"
+            class="input"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="label">Contraseña</label>
+          <input
+            type="password"
+            placeholder="••••••••"
+            class="input"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn-primary w-full">Iniciar sesión</button>
+
+        <p class="text-sm text-center mt-4 text-gray-300">
+          ¿No tenés cuenta?
+          <a href="#" id="showRegister" class="link">Crear cuenta</a>
+        </p>
+      </form>
+
+      <!-- Formulario de registro -->
+      <form id="registerForm" class="space-y-5 hidden">
+        <div>
+          <label class="label">Correo electrónico</label>
+          <input
+            type="email"
+            placeholder="ejemplo@gmail.com"
+            class="input"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="label">Contraseña</label>
+          <input
+            type="password"
+            placeholder="••••••••"
+            class="input"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="label">Repetir contraseña</label>
+          <input
+            type="password"
+            placeholder="••••••••"
+            class="input"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn-green w-full">Registrarme</button>
+
+        <p class="text-sm text-center mt-4 text-gray-300">
+          ¿Ya tenés cuenta?
+          <a href="#" id="showLogin" class="link">Iniciar sesión</a>
+        </p>
+      </form>
+    </div>
+
+    <!-- Archivo JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
